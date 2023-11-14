@@ -508,31 +508,32 @@ He understands the requirements very soon and provides excellent results. I want
             </div>
             <script>
                 let isDragging2 = false;
-                let startX;
-                let scrollLeft;
+                let startX2;
+                let scrollLeft2;
               
-                const draggableList = document.getElementById('da_thing_2');
+                const draggableList2 = document.getElementById('da_thing_2');
               
-                draggableList.addEventListener('mousedown', (e) => {
+                draggableList2.addEventListener('mousedown', (e) => {
+                    console.log("Test");
                   isDragging2 = true;
-                  startX = e.pageX - draggableList.offsetLeft;
-                  scrollLeft = draggableList.scrollLeft;
+                  startX2 = e.pageX - draggableList2.offsetLeft;
+                  scrollLeft2 = draggableList2.scrollLeft2;
                 });
               
-                draggableList.addEventListener('mouseleave', () => {
+                draggableList2.addEventListener('mouseleave', () => {
                   isDragging2 = false;
                 });
               
-                draggableList.addEventListener('mouseup', () => {
+                draggableList2.addEventListener('mouseup', () => {
                   isDragging2 = false;
                 });
               
-                draggableList.addEventListener('mousemove', (e) => {
+                draggableList2.addEventListener('mousemove', (e) => {
                   if (!isDragging2) return;
                   e.preventDefault();
-                  const x = e.pageX - draggableList.offsetLeft;
-                  const walk = (x - startX) * 2;
-                  draggableList.scrollLeft = scrollLeft - walk;
+                  const x2 = e.pageX - draggableList2.offsetLeft;
+                  const walk2 = (x2 - startX2) * 2;
+                  draggableList2.scrollLeft2 = scrollLeft2 - walk2;
                 });
               </script>
 
@@ -639,12 +640,24 @@ He understands the requirements very soon and provides excellent results. I want
                     </div>
                     <div class="mt-10 basis-full lg:ms-10 lg:mt-0 xl:ms-20">
                         <astro-island uid="29Nr51" prefix="r7" component-url="/_astro/contact-form.794d63ac.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ContactForm&quot;,&quot;value&quot;:true}" await-children="">
-                            <form>
+                            <form action="https://formsubmit.co/elku001@yahoo.com" method="POST">
+                                <input type="hidden" name="_subject" value="New submission!">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://portfolio.protdos.com/#contact">
                                 <fieldset class="group flex flex-col gap-y-6">
-                                    <div><label for="contact-form-name" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Name</label><input type="text" class="peer block w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-name" name="name" /></div>
-                                    <div><label for="contact-form-email" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</label><input type="email" class="peer block w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-email" name="email" /></div>
-                                    <div><label for="contact-form-message" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Message</label><textarea class="peer block max-h-36 min-h-[3.125rem] w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-message" name="message"></textarea></div>
-                                    <div class="flex max-sm:flex-col-reverse max-sm:gap-y-6 sm:items-center sm:justify-between"><a class="inline-flex items-center text-neutrals-300 transition-colors hover:text-neutrals-50 focus-visible:text-neutrals-50" href="mailto:rootcode@duck.com" title="Hit me up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="me-2 inline h-5 w-5"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"></path><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path></svg>rootcode@duck.com</a><button class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-6 py-3 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] bg-neutrals-50 hover:[&amp;:not(:disabled)]:text-neutrals-50 focus-visible:text-neutrals-50 text-neutrals-900 before:bg-neutrals-900 disabled:cursor-progress max-sm:w-full" type="submit" disabled>Hit me up<div aria-hidden="true" class="ms-2 inline opacity-70 group-enabled:hidden"><svg height="20" width="20" class="Ring-module_container__1mCd7" viewBox="25 25 50 50" style="--uib-size:20px;--uib-color:currentColor;--uib-speed:2s"><circle cx="50" cy="50" r="20" stroke-width="5" fill="none"></circle></svg></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="ms-2 inline h-5 w-5 group-disabled:hidden"><path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path><path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z"></path></svg></button></div>
+                                    <div>
+                                        <label for="contact-form-name" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Name</label>
+                                        <input type="text" class="peer block w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-name" name="name" /></div>
+                                    <div>
+                                        <label for="contact-form-email" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</label>
+                                        <input type="email" class="peer block w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-email" name="email" /></div>
+                                    <div>
+                                        <label for="contact-form-message" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Message</label>
+                                        <textarea class="peer block max-h-36 min-h-[3.125rem] w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-message" name="message"></textarea></div>
+                                    <div class="flex max-sm:flex-col-reverse max-sm:gap-y-6 sm:items-center sm:justify-between">
+                                        <a class="inline-flex items-center text-neutrals-300 transition-colors hover:text-neutrals-50 focus-visible:text-neutrals-50" href="mailto:rootcode@duck.com" title="Hit me up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="me-2 inline h-5 w-5"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"></path><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path></svg>rootcode@duck.com</a>
+                                        <button class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-6 py-3 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] bg-neutrals-50 hover:[&amp;:not(:disabled)]:text-neutrals-50 focus-visible:text-neutrals-50 text-neutrals-900 before:bg-neutrals-900 disabled:cursor-progress max-sm:w-full" type="submit">Hit me up<div aria-hidden="true" class="ms-2 inline opacity-70 group-enabled:hidden"><svg height="20" width="20" class="Ring-module_container__1mCd7" viewBox="25 25 50 50" style="--uib-size:20px;--uib-color:currentColor;--uib-speed:2s"><circle cx="50" cy="50" r="20" stroke-width="5" fill="none"></circle></svg></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="ms-2 inline h-5 w-5 group-disabled:hidden"><path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path><path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z"></path></svg></button>
+                                    </div>
                                 </fieldset>
                             </form>
                             <!--astro:end-->
