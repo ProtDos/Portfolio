@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="_astro/_slug_.667cee12.css">
     <script type="module" src="_astro/hoisted.fcf19d90.js"></script>
     <script type="module" src="_astro/page.c2607b1b.js"></script>
+    <script type="module" src="grid.js"></script>
     <link rel="canonical" href="index.html">
     <meta name="description" content="CodingLive is bringing you web development and any type of botting you have ever dreamed of.">
     <meta name="robots" content="index, follow">
@@ -56,6 +57,9 @@
     <link rel="apple-touch-icon" sizes="256x256" href="IMG_5452.png">
     <link rel="apple-touch-icon" sizes="384x384" href="IMG_5452.png">
     <link rel="apple-touch-icon" sizes="512x512" href="IMG_5452.png">
+
+    <!-- This is just experimental-->
+    <link rel="stylesheet" href="stars_test.css">
 </head>
 
 <body class="scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50"><a href="#main" class="sr-only">
@@ -79,17 +83,18 @@ Skip to main content
                 </div>
             </div>
         </header>
-        <!--astro:end-->
     </astro-island>
+
+
     <main id="main">
         <section aria-labelledby="hero-heading" class="sticky inset-0 flex h-screen w-full flex-col justify-center py-28">
             <astro-island uid="J7izH" prefix="r4" component-url="/_astro/grid-background.4586b404.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;GridBackground&quot;,&quot;value&quot;:true}" await-children="">
-                <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-50 overflow-hidden bg-primary bg-[size:103%_103%] bg-no-repeat object-fill" style="background-image:url(_astro/future-grid.a0cd4189.webp);background-position:calc(50% + 0px) calc(50% + 0px)"></div>
+                <div aria-hidden="true" id="shit" class="pointer-events-none absolute inset-0 -z-50 overflow-hidden bg-primary bg-[size:103%_103%] bg-no-repeat object-fill" style="background-image:url(_astro/future-grid.a0cd4189.webp);background-position:calc(50% + 0px) calc(50% + 0px)"></div>
             </astro-island>
             <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
                 <div class="flex flex-col items-center justify-center">
                     <h1 id="hero-heading" class="text-center text-4xl/tight font-bold text-neutrals-50 sm:text-5xl/tight md:text-7xl lg:text-8xl/tight">
-                        Web Development <br>and Bots <br>from the Future
+                        Let's create <br>any project <br>you want!
                     </h1>
                     <div class="mt-12 flex items-stretch gap-x-6 gap-y-3 max-sm:flex-col sm:items-center"><a class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-6 py-3 md:px-8 md:py-4 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] text-primary before:bg-primary bg-neutrals-50 hover:[&amp;:not(:disabled)]:text-neutrals-50 focus-visible:text-neutrals-50" as="a" href="index.html#work">
 Dig into my universe
@@ -99,6 +104,50 @@ See services
                 </div>
             </div>
         </section>
+
+        <script>
+            function convertCursorPosition(x, y) {
+  // Assuming x and y are the current cursor position coordinates
+
+  // Define the maximum and minimum values
+  const maxX = 15;
+  const maxY = 15;
+  const minX = -15;
+  const minY = -15;
+
+  // Perform the conversion for x-coordinate
+  const convertedX = (x / window.innerWidth) * (maxX - minX) + minX;
+
+  // Perform the conversion for y-coordinate
+  const convertedY = (y / window.innerHeight) * (maxY - minY) + minY;
+
+  return { x: convertedX, y: convertedY };
+}
+
+            function handleMouseMove(event) {
+                // Get the mouse coordinates
+                const a = event.clientX;
+                const c = event.clientY;
+
+                const originalX = a; // Example x-coordinate
+const originalY = c; // Example y-coordinate
+
+const convertedPosition = convertCursorPosition(originalX, originalY);
+
+console.log("Original Position (x, y):", originalX, originalY);
+console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPosition.y * -1);
+
+                
+
+                var myDiv = document.getElementById('shit');
+                myDiv.style.backgroundPosition = `calc(50% + ${convertedPosition.x * -1}px) calc(50% + ${convertedPosition.y * -1}px)`
+
+                console.log(`Mouse coordinates: X=${a}, Y=${c}`);
+            }
+    
+            document.addEventListener('mousemove', handleMouseMove);
+        </script>
+
         <section id="about" aria-labelledby="about-heading" class="relative z-10 w-full bg-neutrals-900">
             <div class="flex min-h-screen w-full items-center max-lg:flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,min(91.666667%/2,40rem))_minmax(0,min(91.666667%/2,40rem))_minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_minmax(0,min(80%/2,40rem))_minmax(0,min(80%/2,40rem))_minmax(0,1fr)]"><img src="_astro/image.jpg" width="1328" height="1770" alt="" draggable="false" decoding="async" class="h-full max-h-screen bg-neutrals-800 object-cover object-center lg:col-start-1 lg:col-end-3" />
                 <div class="w-full py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:ps-10 xl:ps-20">
@@ -343,10 +392,13 @@ See services
 
             </astro-island>
         </section>
-        <section class="relative z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen before:inset-x-0 before:h-px before:absolute before:w-4/5 before:top-0 before:-z-10 before:bg-gradient-to-r before:from-transparent before:via-neutrals-600 before:to-transparent before:max-w-7xl before:mx-auto after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:mx-auto after:h-full after:w-full after:max-w-7xl after:bg-[radial-gradient(40%_36%_at_50%_0%,rgba(105,25,255,0.04)_0%,rgba(105,25,255,0)_100%,rgba(105,25,255,0)_100%),radial-gradient(32%_20%_at_50%_32%,rgba(105,25,255,0.08)_0%,rgba(105,25,255,0)_100%)]" id="stories" aria-labelledby="stories-heading">
+        <section class="bg-animation relative z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen before:inset-x-0 before:h-px before:absolute before:w-4/5 before:top-0 before:-z-10 before:bg-gradient-to-r before:from-transparent before:via-neutrals-600 before:to-transparent before:max-w-7xl before:mx-auto after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:mx-auto after:h-full after:w-full after:max-w-7xl after:bg-[radial-gradient(40%_36%_at_50%_0%,rgba(105,25,255,0.04)_0%,rgba(105,25,255,0)_100%,rgba(105,25,255,0)_100%),radial-gradient(32%_20%_at_50%_32%,rgba(105,25,255,0.08)_0%,rgba(105,25,255,0)_100%)]" id="stories" aria-labelledby="stories-heading">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
             <astro-island uid="Z9hi00" prefix="r27" component-url="/_astro/stars-background.ac318252.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;StarsBackground&quot;,&quot;value&quot;:true}" await-children="">
                 <div class="mask-inline-faded pointer-events-none absolute inset-0 -z-10" id="tsparticles"><canvas style="width:100%;height:100%"></canvas></div>
-                <!--astro:end-->
             </astro-island>
             <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
                 <div class="mb-16 flex flex-col items-center text-center">
@@ -373,8 +425,8 @@ See services
 
                 }
             </style>
-            <div class="mask-inline h-[calc(clamp(18rem,42vmin,26rem)*3/2)] touch-none select-none overflow-hidden" id="da_thing">
-                <ul id="da_thing_2" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-2 overflow-x-hidden ps-10" style="padding-left: 20px;">
+            <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
+                <ul id="da_thing_2" aria-label="Testimontials" class="grid auto-cols-min grid-flow-col gap-x-2 overflow-x-hidden ps-10" style="padding-left: 20px;">
                     <li data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
                         <article class="flex h-full flex-col justify-between gap-y-2">
                             <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
