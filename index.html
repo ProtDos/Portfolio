@@ -305,51 +305,6 @@ See services
                         </div>
                         
                     </div>
-<script>
-  const tabsBox = document.querySelector('.grid'),
-  allTabs = tabsBox.querySelectorAll('.relative'),
-  arrowIcons = document.querySelectorAll('.icon i')
-
-let isDragging = false
-
-const handleIcons = scrollVal => {
-  let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth
-  arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? 'none' : 'flex'
-  arrowIcons[1].parentElement.style.display =
-    maxScrollableWidth - scrollVal <= 1 ? 'none' : 'flex'
-}
-
-arrowIcons.forEach(icon => {
-  icon.addEventListener('click', () => {
-    // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
-    let scrollWidth = (tabsBox.scrollLeft += icon.id === 'left' ? -340 : 340)
-    handleIcons(scrollWidth)
-  })
-})
-
-allTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabsBox.querySelector('.active').classList.remove('active')
-    tab.classList.add('active')
-  })
-})
-
-const dragging = e => {
-  if (!isDragging) return
-  tabsBox.classList.add('dragging')
-  tabsBox.scrollLeft -= e.movementX
-  handleIcons(tabsBox.scrollLeft)
-}
-
-const dragStop = () => {
-  isDragging = false
-  tabsBox.classList.remove('dragging')
-}
-
-tabsBox.addEventListener('mousedown', () => (isDragging = true))
-tabsBox.addEventListener('mousemove', dragging)
-document.addEventListener('mouseup', dragStop)
-</script>                    
                     <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
                         <div class="h-px w-full bg-gradient-to-r from-neutrals-600/60 via-neutrals-600 to-neutrals-600/60">
                             <div class="h-full bg-gradient-to-r from-neutrals-100/30 via-neutrals-100 to-neutrals-100/30" style="width:100%"></div>
@@ -551,28 +506,28 @@ He understands the requirements very soon and provides excellent results. I want
                 </ul>
             </div>
             <script>
-                let isDragging = false;
+                let isDragging2 = false;
                 let startX;
                 let scrollLeft;
               
                 const draggableList = document.getElementById('da_thing_2');
               
                 draggableList.addEventListener('mousedown', (e) => {
-                  isDragging = true;
+                  isDragging2 = true;
                   startX = e.pageX - draggableList.offsetLeft;
                   scrollLeft = draggableList.scrollLeft;
                 });
               
                 draggableList.addEventListener('mouseleave', () => {
-                  isDragging = false;
+                  isDragging2 = false;
                 });
               
                 draggableList.addEventListener('mouseup', () => {
-                  isDragging = false;
+                  isDragging2 = false;
                 });
               
                 draggableList.addEventListener('mousemove', (e) => {
-                  if (!isDragging) return;
+                  if (!isDragging2) return;
                   e.preventDefault();
                   const x = e.pageX - draggableList.offsetLeft;
                   const walk = (x - startX) * 2;
