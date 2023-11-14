@@ -87,7 +87,7 @@ Skip to main content
 
 
     <main id="main">
-        <section aria-labelledby="hero-heading" class="sticky inset-0 flex h-screen w-full flex-col justify-center py-28">
+        <section aria-labelledby="hero-heading" class="sticky inset-0 flex h-screen w-full flex-col justify-center py-28" id="sec1">
             <astro-island uid="J7izH" prefix="r4" component-url="/_astro/grid-background.4586b404.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;GridBackground&quot;,&quot;value&quot;:true}" await-children="">
                 <div aria-hidden="true" id="shit" class="pointer-events-none absolute inset-0 -z-50 overflow-hidden bg-primary bg-[size:103%_103%] bg-no-repeat object-fill" style="background-image:url(_astro/future-grid.a0cd4189.webp);background-position:calc(50% + 0px) calc(50% + 0px)"></div>
             </astro-island>
@@ -144,8 +144,8 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
 
                 console.log(`Mouse coordinates: X=${a}, Y=${c}`);
             }
-    
-            document.addEventListener('mousemove', handleMouseMove);
+    var cont = document.getElementById("sec1");
+            cont.addEventListener('mousemove', handleMouseMove);
         </script>
 
         <section id="about" aria-labelledby="about-heading" class="relative z-10 w-full bg-neutrals-900">
