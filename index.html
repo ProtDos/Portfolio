@@ -107,7 +107,18 @@ See services
             </div>
         </section>
 
+        <p id="tttesttt"></p>
+
         <script>
+            const element = document.querySelector("tttesttt");
+const output = document.querySelector("tttesttt");
+
+document.addEventListener("scroll", (event) => {
+  output.innerHTML = "Scroll event fired!";
+  setTimeout(() => {
+    output.innerHTML = "Waiting on scroll events...";
+  }, 1000);
+});
             function convertCursorPosition(x, y) {
   // Assuming x and y are the current cursor position coordinates
 
