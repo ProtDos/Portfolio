@@ -425,8 +425,15 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
 
                 }
             </style>
+            <!--
             <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
-                <ul id="da_thing_2" aria-label="Testimontials" class="grid auto-cols-min grid-flow-col gap-x-2 overflow-x-hidden ps-10" style="padding-left: 20px;">
+                <ul id="da_thing_2" aria-label="Testimontials" class="grid auto-cols-min grid-flow-col gap-x-2 overflow-x-hidden ps-10" style="padding-left: 20px;"> -->
+            <div class="mt-4 w-full scroll-container">
+                <div class="content">
+                    <div class="relative py-8">
+                        <div class="h-[calc(clamp(18rem,42vmin,26rem)*3/2)] touch-none select-none overflow-hidden" id="da_thing">
+                            <ul id="da_thing_2" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10" style="padding-left: 20px;">
+                             
                     <li data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
                         <article class="flex h-full flex-col justify-between gap-y-2">
                             <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
@@ -552,6 +559,9 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                     </li>
                 </ul>
             </div>   
+                    </div>
+                </div>
+            </div>
             <!--
             <div id="stars"></div>
             <div id="stars2"></div>
