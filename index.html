@@ -160,7 +160,7 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                 console.log(`Mouse coordinates: X=${a}, Y=${c}`);
             }
     var cont = document.getElementById("sec1");
-            cont.addEventListener('mousemove', handleMouseMove);
+            document.addEventListener('mousemove', handleMouseMove);
         </script>
 
         <section id="about" aria-labelledby="about-heading" class="relative z-10 w-full bg-neutrals-900">
@@ -399,7 +399,6 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                 draggableList.addEventListener('mousemove', (e) => {
                   if (!isDragging) return;
                   e.preventDefault();
-                    alert("blyat");
                   const x = e.pageX - draggableList.offsetLeft;
                   const walk = (x - startX) * 2;
                   draggableList.scrollLeft = scrollLeft - walk;
