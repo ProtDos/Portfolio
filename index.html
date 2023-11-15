@@ -7,29 +7,18 @@
     <meta content="width=device-width" name="viewport">
     <title>CodingLive | Portfolio</title>
     <script>
-        !(function(w,p,f,c){if(!window.crossOriginIsolated && !navigator.serviceWorker) return;c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.8.1 - MIT builder.io */
-        !function(t,e,n,i,o,r,a,s,d,c,l,p){function u(){p||(p=1,"/"==(a=(r.lib||"/~partytown/")+(r.debug?"debug/":""))[0]&&(d=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(s=setTimeout(f,1e4),e.addEventListener("pt0",w),o?h(1):n.serviceWorker?n.serviceWorker.register(a+(r.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):f())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.style.display="block",c.style.width="0",c.style.height="0",c.style.border="0",c.style.visibility="hidden",c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.8.1":"sandbox-sw.html?"+Date.now()),e.querySelector(r.sandboxParent||"body").appendChild(c)}function f(n,o){for(w(),i==t&&(r.forward||[]).map((function(e){delete t[e.split(".")[0]]})),n=0;n<d.length;n++)(o=e.createElement("script")).innerHTML=d[n].innerHTML,o.nonce=r.nonce,e.head.appendChild(o);c&&c.parentNode.removeChild(c)}function w(){clearTimeout(s)}r=t.partytown||{},i==t&&(r.forward||[]).map((function(e){l=t,e.split(".").map((function(e,n,i){l=l[i[n]]=n+1<i.length?"push"==i[n+1]?[]:l[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);
-    </script>
-    <script>
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('service-worker.js');
         }
     </script>
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-        		var script = document.createElement('script');
-        		script.defer = true;
-        		script.src = '_vercel/insights/script.js';
-        		var head = document.querySelector('head');
-        		head.appendChild(script);
-    </script>
     <link rel="stylesheet" href="_astro/_slug_.667cee12.css">
+
     <script type="module" src="_astro/hoisted.fcf19d90.js"></script>
     <script type="module" src="_astro/page.c2607b1b.js"></script>
-    <script src="fix_bg.js"></script>
 
-    <!-- testing thi£
-    <script type="module" src="grid.js"></script> -->
+    <script type="module" src="script.js"></script>
+
+
     <link rel="canonical" href="index.html">
     <meta name="description" content="CodingLive is bringing you web development and any type of botting you have ever dreamed of.">
     <meta name="robots" content="index, follow">
@@ -61,16 +50,17 @@
     <link rel="apple-touch-icon" sizes="384x384" href="IMG_5452.png">
     <link rel="apple-touch-icon" sizes="512x512" href="IMG_5452.png">
 
-    <!-- This is just experimental -->
     <link rel="stylesheet" href="stars_test.css">
+
 </head>
 
-<body class="scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50"><a href="#main" class="sr-only">
-Skip to main content
-</a>
+<body class="scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50">
+    <a href="#main" class="sr-only">Skip to main content</a>
+
     <style>
         astro-island,astro-slot,astro-static-slot{display:contents}
     </style>
+
     <astro-island uid="IAx7C" prefix="r2" component-url="/_astro/header.6a01347f.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{&quot;data-astro-transition-persist&quot;:[0,&quot;astro-p2oxaboh-1&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" data-astro-transition-persist="astro-p2oxaboh-1" await-children="">
         <header aria-label="Primary" class="fixed top-0 z-40 w-full">
             <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
@@ -90,7 +80,6 @@ Skip to main content
 
 
     <main id="main">
-        <div id="triggerSection"></div> <!-- class="sticky ..." -->
         <section aria-labelledby="hero-heading" id="da_section" class="relative inset-0 flex h-screen w-full flex-col justify-center py-28" id="sec1">
             <astro-island uid="J7izH" prefix="r4" component-url="/_astro/grid-background.4586b404.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;GridBackground&quot;,&quot;value&quot;:true}" await-children="">
                 <div aria-hidden="true" id="shit" class="pointer-events-none absolute inset-0 -z-50 overflow-hidden bg-primary bg-[size:103%_103%] bg-no-repeat object-fill" style="background-image:url(_astro/future-grid.a0cd4189.webp);background-position:calc(50% + 0px) calc(50% + 0px)"></div>
@@ -101,67 +90,14 @@ Skip to main content
                         Let's create <br>any project <br>you want!
                     </h1>
                     <div class="mt-12 flex items-stretch gap-x-6 gap-y-3 max-sm:flex-col sm:items-center"><a class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-6 py-3 md:px-8 md:py-4 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] text-primary before:bg-primary bg-neutrals-50 hover:[&amp;:not(:disabled)]:text-neutrals-50 focus-visible:text-neutrals-50" as="a" href="index.html#work">
-Dig into my universe
-</a><a class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-6 py-3 md:px-8 md:py-4 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] hover:[&amp;:not(:disabled)]:text-primary focus-visible:text-primary text-neutrals-50 before:bg-neutrals-50" as="a" href="index.html#services">
-See services
-</a></div>
+                        Dig into my universe
+                        </a><a class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-6 py-3 md:px-8 md:py-4 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] hover:[&amp;:not(:disabled)]:text-primary focus-visible:text-primary text-neutrals-50 before:bg-neutrals-50" as="a" href="index.html#services">
+                        See services
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <p id="tttesttt"></p>
-
-        <script>
-            const element = document.querySelector("tttesttt");
-const output = document.querySelector("tttesttt");
-
-document.addEventListener("scroll", (event) => {
-  output.innerHTML = "Scroll event fired!";
-  setTimeout(() => {
-    output.innerHTML = "Waiting on scroll events...";
-  }, 1000);
-});
-            function convertCursorPosition(x, y) {
-  // Assuming x and y are the current cursor position coordinates
-
-  // Define the maximum and minimum values
-  const maxX = 15;
-  const maxY = 15;
-  const minX = -15;
-  const minY = -15;
-
-  // Perform the conversion for x-coordinate
-  const convertedX = (x / window.innerWidth) * (maxX - minX) + minX;
-
-  // Perform the conversion for y-coordinate
-  const convertedY = (y / window.innerHeight) * (maxY - minY) + minY;
-
-  return { x: convertedX, y: convertedY };
-}
-
-            function handleMouseMove(event) {
-                // Get the mouse coordinates
-                const a = event.clientX;
-                const c = event.clientY;
-
-                const originalX = a; // Example x-coordinate
-const originalY = c; // Example y-coordinate
-
-const convertedPosition = convertCursorPosition(originalX, originalY);
-
-console.log("Original Position (x, y):", originalX, originalY);
-console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPosition.y * -1);
-
-                
-
-                var myDiv = document.getElementById('shit');
-                myDiv.style.backgroundPosition = `calc(50% + ${convertedPosition.x * -1}px) calc(50% + ${convertedPosition.y * -1}px)`
-
-                console.log(`Mouse coordinates: X=${a}, Y=${c}`);
-            }
-    var cont = document.getElementById("sec1");
-            document.addEventListener('mousemove', handleMouseMove);
-        </script>
 
         <section id="about" aria-labelledby="about-heading" class="relative z-10 w-full bg-neutrals-900">
             <div class="flex min-h-screen w-full items-center max-lg:flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,min(91.666667%/2,40rem))_minmax(0,min(91.666667%/2,40rem))_minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_minmax(0,min(80%/2,40rem))_minmax(0,min(80%/2,40rem))_minmax(0,1fr)]"><img src="_astro/image.jpg" width="1328" height="1770" alt="" draggable="false" decoding="async" class="h-full max-h-screen bg-neutrals-800 object-cover object-center lg:col-start-1 lg:col-end-3" />
@@ -375,39 +311,9 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                 </div>
             </div>
 
-            <script>
-                let isDragging = false;
-                let startX;
-                let scrollLeft;
-              
-                const draggableList = document.getElementById('project-carousel');
-              
-                draggableList.addEventListener('mousedown', (e) => {
-                  isDragging = true;
-                  startX = e.pageX - draggableList.offsetLeft;
-                  scrollLeft = draggableList.scrollLeft;
-                });
-              
-                draggableList.addEventListener('mouseleave', () => {
-                  isDragging = false;
-                });
-              
-                draggableList.addEventListener('mouseup', () => {
-                  isDragging = false;
-                });
-              
-                draggableList.addEventListener('mousemove', (e) => {
-                  if (!isDragging) return;
-                  e.preventDefault();
-                  const x = e.pageX - draggableList.offsetLeft;
-                  const walk = (x - startX) * 2;
-                  draggableList.scrollLeft = scrollLeft - walk;
-                });
-              </script>
-
             </astro-island>
         </section>
-        <section class="relative z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen before:inset-x-0 before:h-px before:absolute before:w-4/5 before:top-0 before:-z-10 before:bg-gradient-to-r before:from-transparent before:via-neutrals-600 before:to-transparent before:max-w-7xl before:mx-auto after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:mx-auto after:h-full after:w-full after:max-w-7xl after:bg-[radial-gradient(40%_36%_at_50%_0%,rgba(105,25,255,0.04)_0%,rgba(105,25,255,0)_100%,rgba(105,25,255,0)_100%),radial-gradient(32%_20%_at_50%_32%,rgba(105,25,255,0.08)_0%,rgba(105,25,255,0)_100%)]" id="stories" aria-labelledby="stories-heading">
+        <section class="bg-animation z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen before:inset-x-0 before:h-px before:absolute before:w-4/5 before:top-0 before:-z-10 before:bg-gradient-to-r before:from-transparent before:via-neutrals-600 before:to-transparent before:max-w-7xl before:mx-auto after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:mx-auto after:h-full after:w-full after:max-w-7xl after:bg-[radial-gradient(40%_36%_at_50%_0%,rgba(105,25,255,0.04)_0%,rgba(105,25,255,0)_100%,rgba(105,25,255,0)_100%),radial-gradient(32%_20%_at_50%_32%,rgba(105,25,255,0.08)_0%,rgba(105,25,255,0)_100%)]" id="stories" aria-labelledby="stories-heading">
             
             <astro-island uid="Z9hi00" prefix="r27" component-url="/_astro/stars-background.ac318252.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;StarsBackground&quot;,&quot;value&quot;:true}" await-children="">
                 <div class="mask-inline-faded pointer-events-none absolute inset-0 -z-10" id="tsparticles"><canvas style="width:100%;height:100%"></canvas></div>
@@ -426,192 +332,153 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
             </div>
             <style>
                 .mask-inline {
--webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-
+                    -webkit-mask: linear-gradient(
+                        90deg,
+                        transparent,
+                        white 20%,
+                        white 80%,
+                        transparent
+                    );
+                    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
                 }
             </style>
-            <!--
-            <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
-                <ul id="da_thing_2" aria-label="Testimontials" class="grid auto-cols-min grid-flow-col gap-x-2 overflow-x-hidden ps-10" style="padding-left: 20px;"> -->
-            <div class="bg-animation mt-4 w-full scroll-container">
+            <div class="w-full scroll-container">
                 <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-            <div id="stars4"></div>
-                <div class="content">
-                    <div class="relative py-8">
-                        <div class="mask-inline h-[calc(clamp(18rem,42vmin,26rem)*3/2)] touch-none select-none overflow-hidden" id="da_thing">
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+                <div id="stars4"></div>
+
+                        <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
                             <ul id="da_thing_2" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-hidden ps-10" style="padding-left: 20px;">
                              
-                    <li data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->CodingLive is an outstanding developer with amazing skills, totally recommend hiring.
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame -ms-3 h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#654333" alt="Tate" decoding="async" src="https://cdn.discordapp.com/avatars/692818555456061497/3b8925fe59d779ffc152dea0a584e90f.webp?size=80" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Tate</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <li data-item-index="2" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->I highly recommend CodingLive for his exceptional work and professionalism. He consistently delivered outstanding results, showcasing expertise and attention to detail. CodingLive's strong problem-solving skills, proactive communication, and collaborative approach made him a pleasure to work with. I have complete confidence in his abilities and would gladly work with him again.
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame -ms-3 h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9e7260" alt="GlobalSt@r" decoding="async" src="https://cdn.discordapp.com/avatars/1103336923696746498/acbfa8a5e6d59bd27a7b8ce4430b6c1a.webp?size=32" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">GlobalSt@r</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <li data-item-index="3" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->He is a creative and smart developer.
-                He understands the requirements very soon and provides excellent results. I want to work with him in long term.
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Early Bird" decoding="async" src="https://cdn.discordapp.com/avatars/1111829617662251008/8676ae4509617fedce8f1e31930ca4d7.webp?size=80" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Early Bird</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <li data-item-index="4" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->vouch CodingLive, super nice, was willing to go 2$ under original price. super quick with giving code. would definetly buy again
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame -ms-3 h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#654333" alt="Siege" decoding="async" src="https://cdn.discordapp.com/avatars/1151479660895555634/a_3c334110d6375866d00b48b451b0a945.webp?size=80" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">siege</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
+                                <li data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->CodingLive is an outstanding developer with amazing skills, totally recommend hiring.
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame -ms-3 h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#654333" alt="Tate" decoding="async" src="https://cdn.discordapp.com/avatars/692818555456061497/3b8925fe59d779ffc152dea0a584e90f.webp?size=80" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Tate</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li data-item-index="2" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->I highly recommend CodingLive for his exceptional work and professionalism. He consistently delivered outstanding results, showcasing expertise and attention to detail. CodingLive's strong problem-solving skills, proactive communication, and collaborative approach made him a pleasure to work with. I have complete confidence in his abilities and would gladly work with him again.
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame -ms-3 h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9e7260" alt="GlobalSt@r" decoding="async" src="https://cdn.discordapp.com/avatars/1103336923696746498/acbfa8a5e6d59bd27a7b8ce4430b6c1a.webp?size=32" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">GlobalSt@r</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li data-item-index="3" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->He is a creative and smart developer.
+                            He understands the requirements very soon and provides excellent results. I want to work with him in long term.
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Early Bird" decoding="async" src="https://cdn.discordapp.com/avatars/1111829617662251008/8676ae4509617fedce8f1e31930ca4d7.webp?size=80" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Early Bird</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li data-item-index="4" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->vouch CodingLive, super nice, was willing to go 2$ under original price. super quick with giving code. would definetly buy again
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame -ms-3 h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#654333" alt="Siege" decoding="async" src="https://cdn.discordapp.com/avatars/1151479660895555634/a_3c334110d6375866d00b48b451b0a945.webp?size=80" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">siege</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
 
 
-                    <li data-item-index="5" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->One of the bost talented devs out there. He added every single feature i asked for did it an efficient and professional manner. He went above and beyond and i will 100% using him in the future.
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Jinxed" decoding="async" src="https://personal.protdos.com/img/jinxed.png" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Jinxed</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <li data-item-index="6" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->You did it quite fast.
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Intenzi" decoding="async" src="https://personal.protdos.com/img/intenzi.gif" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Intenzi</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <li data-item-index="7" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->One of the bost talented devs out there. He added every single feature i asked for did it an efficient and professional manner. He went above and beyond and i will 100% using him in the future.
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="M00nd4rk" decoding="async" src="https://personal.protdos.com/img/m00n.webp" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">M00nd4rk</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                    <li data-item-index="8" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
-                        <article class="flex h-full flex-col justify-between gap-y-2">
-                            <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
-                                <!-- -->I think this bot dev is oke, he will get ur work done, [...] although he still could fix parts of da code I think he is alright a 4 out of 5 for me
-                                <!-- -->&quot;</blockquote>
-                            <div class="mt-6 flex items-center">
-                                <div class="me-3 flex">
-                                    <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Mika" decoding="async" src="https://personal.protdos.com/img/mika.png" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
-                                </div>
-                                <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Mikayrue</h3></cite>
-                                    <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
-                                </div>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>   
-                    </div>
-                </div>
-            
-            
-            
-            </div>
-            
+                                <li data-item-index="5" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->One of the bost talented devs out there. He added every single feature i asked for did it an efficient and professional manner. He went above and beyond and i will 100% using him in the future.
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Jinxed" decoding="async" src="https://personal.protdos.com/img/jinxed.png" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Jinxed</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li data-item-index="6" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->You did it quite fast.
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Intenzi" decoding="async" src="https://personal.protdos.com/img/intenzi.gif" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Intenzi</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li data-item-index="7" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->One of the bost talented devs out there. He added every single feature i asked for did it an efficient and professional manner. He went above and beyond and i will 100% using him in the future.
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="M00nd4rk" decoding="async" src="https://personal.protdos.com/img/m00n.webp" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">M00nd4rk</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li data-item-index="8" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                    <article class="flex h-full flex-col justify-between gap-y-2">
+                                        <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
+                                            <!-- -->I think this bot dev is oke, he will get ur work done, [...] although he still could fix parts of da code I think he is alright a 4 out of 5 for me
+                                            <!-- -->&quot;</blockquote>
+                                        <div class="mt-6 flex items-center">
+                                            <div class="me-3 flex">
+                                                <div class="bg-shiny-frame h-10 w-10 overflow-hidden rounded-full border border-transparent"><img style="background-color:#9cbce4" alt="Mika" decoding="async" src="https://personal.protdos.com/img/mika.png" srcSet="" sizes="160px" width="40" height="40" class="h-full w-full" /></div>
+                                            </div>
+                                            <div><cite><h3 class="lg:text-md mb-0.5 not-italic">Mikayrue</h3></cite>
+                                                <p class="text-xs text-neutrals-200 lg:text-sm">Discord Purchase</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                </div>          
+            </div>            
         </section>
-        <script>
-        let isDragging2 = false;
-        let startX2;
-        let scrollLeft2;
         
-        const draggableList2 = document.getElementById('da_thing_2');
-        
-        draggableList2.addEventListener('mousedown', (e) => {
-            isDragging2 = true;
-            startX2 = e.pageX - draggableList2.offsetLeft;
-            scrollLeft2 = draggableList2.scrollLeft;
-        });
-        
-        draggableList2.addEventListener('mouseleave', () => {
-            isDragging2 = false;
-        });
-        
-        draggableList2.addEventListener('mouseup', () => {
-            isDragging2 = false;
-        });
-        
-        draggableList2.addEventListener('mousemove', (e) => {
-            if (!isDragging2) return;
-            e.preventDefault();
-            const x2 = e.pageX - draggableList2.offsetLeft;
-            const walk2 = (x2 - startX2) * 2;
-            draggableList2.scrollLeft = scrollLeft2 - walk2;
-        });
-        </script>
         <section class="relative z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen before:inset-x-0 before:h-px before:absolute before:w-4/5 before:top-0 before:-z-10 before:bg-gradient-to-r before:from-transparent before:via-neutrals-600 before:to-transparent before:max-w-7xl before:mx-auto after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:mx-auto after:h-full after:w-full after:max-w-7xl after:bg-[radial-gradient(40%_36%_at_50%_0%,rgba(105,25,255,0.04)_0%,rgba(105,25,255,0)_100%,rgba(105,25,255,0)_100%),radial-gradient(32%_20%_at_50%_32%,rgba(105,25,255,0.08)_0%,rgba(105,25,255,0)_100%)]" id="services" aria-labelledby="services-heading">            <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
                 <div class="mb-16 flex flex-col items-center text-center">
                     <p class="relative mb-4 inline-block overflow-hidden rounded-full border-0.5 border-primary/30 bg-primary/10 px-4 py-1 font-medium uppercase text-primary backdrop-blur-sm after:absolute after:inset-0 after:animate-shiny-badge-slide after:bg-primary/10 max-md:text-sm" id="services-heading">Services</p>
@@ -697,7 +564,6 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                             </div>
                         </a>
                     </div>
-                    <!--astro:end-->
                 </astro-island>
             </div>
         </section>
@@ -748,8 +614,8 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                     <p class="max-w-prose text-base/relaxed text-neutrals-300">
                         You can explore my latest project right here. It's about the most private chat app you have ever seen. It's name? - <span class="text-neutrals-100">Veilo</span>. Stay undercover with your actions online and don't let third parties ever track you again.
                     </p><a class="relative isolate flex justify-center items-center select-none overflow-hidden rounded-sm border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-error px-6 py-3 md:text-lg hover:[&amp;:not(:disabled)]:tracking-[0.075em] text-neutrals-900 before:bg-neutrals-900 bg-error hover:[&amp;:not(:disabled)]:text-error focus-visible:text-error mt-8" as="a" href="https://veilo.protdos.com" rel="noreferrer" target="_blank">
-Explore
-</a></div>
+                    Explore
+                    </a></div>
             </div>
         </section>
     </main>
