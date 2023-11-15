@@ -1,5 +1,6 @@
     // Get the section element
     var section = document.getElementById('triggerSection');
+    var thing = document.getElementById('da_section');
 
     // Function to check if the section is in the viewport
     function isElementInViewport(el) {
@@ -17,8 +18,10 @@
         var body = document.body;
         if (isElementInViewport(section)) {
             body.style.backgroundColor = 'white'; // Section is visible
+            thing.style.visibility = "visible";
         } else {
             body.style.backgroundColor = 'black'; // Section is not visible
+            thing.style.visibility = "hidden";
         }
     }
 
