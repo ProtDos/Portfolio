@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="_astro/_slug_.667cee12.css">
     <script type="module" src="_astro/hoisted.fcf19d90.js"></script>
     <script type="module" src="_astro/page.c2607b1b.js"></script>
-    <script type="module" src="grid.js"></script>
+
+    <!-- testing thi£
+    <script type="module" src="grid.js"></script> -->
     <link rel="canonical" href="index.html">
     <meta name="description" content="CodingLive is bringing you web development and any type of botting you have ever dreamed of.">
     <meta name="robots" content="index, follow">
@@ -384,6 +386,7 @@ console.log("Converted Position (x, y):", convertedPosition.x * -1, convertedPos
                 draggableList.addEventListener('mousemove', (e) => {
                   if (!isDragging) return;
                   e.preventDefault();
+                    alert("blyat");
                   const x = e.pageX - draggableList.offsetLeft;
                   const walk = (x - startX) * 2;
                   draggableList.scrollLeft = scrollLeft - walk;
