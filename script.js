@@ -1,3 +1,4 @@
+// This is for the trippy grif animation
 var myDiv = document.getElementById('shit');
 function convertCursorPosition(x, y) {
     const maxX = 15;
@@ -23,6 +24,7 @@ var cont = document.getElementById("da_section");
 cont.addEventListener('mousemove', handleMouseMove);
 
 
+// This is for the work carousel
 let isDragging = false;
 let startX;
 let scrollLeft;
@@ -51,6 +53,7 @@ draggableList.addEventListener('mousemove', (e) => {
     draggableList.scrollLeft = scrollLeft - walk;
 });
 
+// This is for the testimonials carousel
 let isDragging2 = false;
 let startX2;
 let scrollLeft2;
@@ -78,3 +81,23 @@ draggableList2.addEventListener('mousemove', (e) => {
     const walk2 = (x2 - startX2) * 2;
     draggableList2.scrollLeft = scrollLeft2 - walk2;
 });
+
+var clickableElements = document.getElementsByClassName('clickable');
+
+Array.from(clickableElements).forEach(function(element) {
+    element.addEventListener('click', function() {
+    var href = element.getAttribute('data-href');
+    console.log(href);
+
+    window.open(href, '_blank');
+    });
+});
+
+// This is to fix scrollbar for testimonials on mobile
+// JavaScript to change the class name on mobile devices
+if (window.innerWidth <= 600) {
+    document.getElementById('da_thing_2').className = 'grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10';
+    console.log("smaller");
+} else {
+    document.getElementById('da_thing_2').className = 'grid auto-cols-min grid-flow-col gap-x-6 overflow-x-hidden ps-10';
+}
