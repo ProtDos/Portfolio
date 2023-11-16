@@ -127,6 +127,10 @@
             <div class="mt-4 w-full scroll-container">
                 <div class="content">
                     <div class="relative py-8">
+                        <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
+                            <button type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" disabled="" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
+                            <div class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></div>
+                        </div>
                         <div class="h-[calc(clamp(18rem,42vmin,26rem)*3/2)] touch-none select-none overflow-hidden" id="da_thing">
                             <ul id="project-carousel" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10" style="padding-left: 20px;">
                                <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
@@ -342,8 +346,13 @@
                 <div id="stars3"></div>
                 <div id="stars4"></div>
 
+                <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
+                    <button type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" disabled="" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
+                    <div class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></div>
+                </div>
+
                         <div class="touch-none select-none overflow-auto" id="da_thing">
-                            <ul id="da_thing_2" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10" style="padding-left: 20px;">
+                            <ul id="da_thing_2" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-hidden ps-10" style="padding-left: 20px;">
                              
                                 <li data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
                                     <article class="mask-inline flex h-full flex-col justify-between gap-y-2">
@@ -580,7 +589,11 @@
                                 <input type="hidden" name="_subject" value="New submission!">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_next" value="https://portfolio.protdos.com/#contact">
+
                                 <fieldset class="group flex flex-col gap-y-6">
+                                    <input type="hidden" name="_subject" value="New submission!">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="https://portfolio.protdos.com/#contact">
                                     <div>
                                         <label for="contact-form-name" class="mb-2 block text-sm/none uppercase text-neutrals-300 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Name</label>
                                         <input required type="text" class="peer block w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-name" name="name" /></div>
