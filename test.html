@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Object Animation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="object"></div>
+    </div>
+    <button onclick="startAnimation()">Start Animation</button>
+</body>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: none; /* Hide the object initially */
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(200px) translateY(-100px);
+    }
+    50% {
+        transform: translateX(400px) translateY(0);
+    }
+    75% {
+        transform: translateX(200px) translateY(100px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+</style>
+
+<script>
+    function startAnimation() {
+    var object = document.querySelector('.object');
+    object.style.display = 'block'; // Show the object
+    object.style.animation = 'fly 4s linear forwards'; // Start the animation
+}
+</script>
+</html>

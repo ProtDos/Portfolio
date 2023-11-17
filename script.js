@@ -110,3 +110,69 @@ if (window.innerWidth <= 1081) { // doing this for now.
 } else {
     document.getElementById('da_thing_2').className = 'grid auto-cols-min grid-flow-col gap-x-6 overflow-x-hidden ps-10';
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var element1 = document.getElementById("really");
+    var element2 = document.getElementById("about");
+
+    window.addEventListener('scroll', function () {
+
+        if (element1 && element2) {
+            var yPosition1 = element1.getBoundingClientRect().top;
+            var yPosition2 = element2.getBoundingClientRect().top;
+
+            if (yPosition1 < yPosition2) {
+                document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent';
+            } else if (yPosition1 > yPosition2) {
+                document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50';
+            } else {
+            }
+        } else {
+        }
+    });
+});
+
+// Typing animation
+const textArray = [
+    "Developer",
+    "Coder",
+    "Enterpreneur"
+];
+
+let typeJsText = document.querySelector("#animatedText");
+let stringIndex = 0;
+let charIndex = 0;
+let isTyping = true;
+
+function typeJs() {
+    if (stringIndex < textArray.length) {
+        const currentString = textArray[stringIndex];
+
+        if (isTyping) {
+            if (charIndex < currentString.length) {
+                typeJsText.innerHTML += currentString.charAt(charIndex);
+                charIndex++;
+            } else {
+                isTyping = false;
+            }
+        } else {
+            if (charIndex > 0) {
+                typeJsText.innerHTML = currentString.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                isTyping = true;
+                stringIndex++;
+
+                if (stringIndex >= textArray.length) {
+                    stringIndex = 0; 
+                }
+
+                charIndex = 0;
+                typeJsText.innerHTML = ""; 
+            }
+        }
+    }
+}
+
+setInterval(typeJs, 250);
