@@ -103,8 +103,8 @@ window.mobileAndTabletCheck = function() {
 };
 
 // JavaScript to change the class name on mobile devices
-//if (window.innerWidth <= 600) {
-if (window.mobileAndTabletCheck()) {
+if (window.innerWidth <= 1081) { // doing this for now.
+// if (window.mobileAndTabletCheck()) {
     document.getElementById('da_thing_2').className = 'grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10';
     console.log("smaller");
 } else {
