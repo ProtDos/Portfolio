@@ -82,33 +82,62 @@ Here is a list of any major frameworks/libraries used to bootstrap my project:
   <img src="https://github.com/ProtDos/Portfolio/assets/69071809/c3e3695d-11bd-4c84-b215-4aa6308296bb">
 </div>
 
+## Features
+
+* Responsive design for optimal viewing on various devices.
+* Clean and modern layout to showcase your skills and projects effectively.
+* Easy customization for personal information, skills, projects, and contact details.
+* Lightweight and fast-loading, ensuring a smooth user experience.
+* No third parties loaded
+
+## Getting Started
+### Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+* Git
+* Any modern web browser (e.g., Chrome, Firefox)
+
+### Installation
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/ProtDos/Portfolio.git
+   ```
+2. Open the project folder:
+   ```bash
+   cd Portfolio
+    ```
+3. Open the index.html file in your preferred web browser to view the default portfolio.
+
+
+## Customization
+### Personal Information
+
+Update the personal information in the index.html file to reflect your own details. Modify the following sections:
+
+* Header section with your name and job title.
+* About section with a brief introduction about yourself.
+
+### Skills
+Add or remove skills in the skills section by modifying the HTML and CSS in the `index.html` and `styles.css` files, respectively.
+
+### Projects
+In the projects section, showcase your projects by adding project cards in the `index.html` file. Each project card contains details like project name, description, technologies used, and a link to the project.
+
+### Contact Information
+Update the contact information in the footer section of the `index.html` file with your own details.
+
 
 ## Usage
 
-To use this repo, simply type 
-```sh
-   cd Portfolio/
-   python3 app.py
-   ```
-Then, go to http://localhost:5000.
-To catch some scammers, there are two ways:
-### 1
-```sh
-   ifconfig
-   ```
-Get the public ip of your device / server. Then go to your router settings (most likely at http://192.168.0.1) and enable port forwarding for your device at port 5000. Now you can send that IP around and catch some.
+To use this portfolio template for your own website:
 
-### 2
-Use ngrok. 
-1. Go to https://ngrok.com/download
-2. Select options for your OS.
-3. Download ngrok
-4. Create an account / api key.
-Type:
-```sh
-   ngrok http 5000
-   ```
-Now grab that URL and get going!
+1. Fork this repository.
+2. Clone your forked repository to your local machine.
+3. Follow the customization steps mentioned above.
+4. Host your website on platforms like GitHub Pages, Netlify, or Vercel.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
