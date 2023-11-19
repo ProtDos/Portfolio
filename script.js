@@ -102,16 +102,18 @@ window.mobileAndTabletCheck = function() {
   return check;
 };
 
+console.log(window.mobileAndTabletCheck());
+
 // JavaScript to change the class name on mobile devices
 if (window.innerWidth <= 1081) { // doing this for now.
 // if (window.mobileAndTabletCheck()) {
     document.getElementById('da_thing_2').className = 'grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10';
-    console.log("smaller");
 } else {
     document.getElementById('da_thing_2').className = 'grid auto-cols-min grid-flow-col gap-x-6 overflow-x-hidden ps-10';
 }
 
 
+// Navbar with background after leaving section
 document.addEventListener("DOMContentLoaded", function () {
     var element1 = document.getElementById("really");
     var element2 = document.getElementById("about");
@@ -121,6 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (element1 && element2) {
             var yPosition1 = element1.getBoundingClientRect().top;
             var yPosition2 = element2.getBoundingClientRect().top;
+
+            console.log("Yeah");
 
             if (yPosition1 < yPosition2) {
                 document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent';
