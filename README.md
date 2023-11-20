@@ -157,6 +157,8 @@ To use this portfolio template for your own website:
     - [ ] Other
 - [ ] White Mode?
 - [ ] show Background from navbar earlier
+- [ ] add "Thank You" page
+- [ ] function to submit rating / feedback
 
 See the [open issues](https://github.com/ProtDos/Portfolio/issues) for a full list of proposed features (and known issues).
 
