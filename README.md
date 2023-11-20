@@ -148,7 +148,7 @@ To use this portfolio template for your own website:
 
 - [x] Add Main-Site
 - [x] Add personal projects
-- [ ] Animation on form submit
+- [x] Animation on form submit
 - [ ] Control via buttons
 - [ ] Fix burger menu
 - [ ] Multi-language Support
@@ -156,6 +156,7 @@ To use this portfolio template for your own website:
     - [ ] English
     - [ ] Other
 - [ ] White Mode?
+- [ ] show Background from navbar earlier
 
 See the [open issues](https://github.com/ProtDos/Portfolio/issues) for a full list of proposed features (and known issues).
 
