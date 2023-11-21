@@ -149,14 +149,16 @@ To use this portfolio template for your own website:
 - [x] Add Main-Site
 - [x] Add personal projects
 - [x] Animation on form submit
-- [ ] Control via buttons
+- [X] Control via buttons
 - [ ] Fix burger menu
+  - [ ] switch to cross
+  - [ ] show links
 - [ ] Multi-language Support
     - [ ] German
     - [ ] English
     - [ ] Other
 - [ ] White Mode?
-- [ ] show Background from navbar earlier
+- [X] show Background from navbar earlier
 - [ ] add "Thank You" page
 - [ ] function to submit rating / feedback
 
