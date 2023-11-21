@@ -291,13 +291,14 @@
                 <div id="stars4"></div>
 
                         <script>
-                            function scrollToElement(name) {
+                            function scrollToElement_old(name) {
   const elementToScrollTo = document.getElementById(name);
   scrollTo(elementToScrollTo);
 }
 
-                            function scrollTo(el) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                            function scrollToElement(name) {
+                                  const elementToScrollTo = document.getElementById(name);
+    elementToScrollTo.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
   }
 
 function scrollTo2(el) {
