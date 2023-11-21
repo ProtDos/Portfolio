@@ -278,7 +278,11 @@
   scrollTo(elementToScrollTo);
 }
 
-function scrollTo(el) {
+                            function scrollTo(el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+  }
+
+function scrollTo2(el) {
   const elRight = el.offsetLeft + el.offsetWidth;
   const elLeft = el.offsetLeft;
 
