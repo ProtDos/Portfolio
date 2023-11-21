@@ -129,7 +129,7 @@
 
                         <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
                             <button type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" disabled="" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
-                            <div class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></div>
+                            <button type="text" onclick="scrollToElement('last_project')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
                         </div>
 
                         <div class="h-[calc(clamp(18rem,42vmin,26rem)*3/2)] touch-none select-none overflow-hidden" id="da_thing">
@@ -218,6 +218,24 @@
 
                                         </article><img alt="Test" decoding="async" src="imgs/IMG_5471.jpeg" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="2160" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105" style="background-color:#3c6c34;object-position:100%" /></a>
                                 </li>
+
+                                <!-- this is just for testing, this will be changed -->
+                                <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" id="last_project" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
+                                    <a aria-label="Personal Website" aria-disabled="false" tabindex="0" class="group block h-full w-full rounded-md border border-neutrals-50/30" draggable="false">
+                                        <article class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
+                                            <div class="overflow-hidden"><time dateTime="2023-08-01" class="block translate-y-full text-xs uppercase text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">November 2022</time></div>
+                                            <div class="overflow-hidden">
+                                                <h3 id="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" class="translate-y-full text-2xl font-bold transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-4xl">Refreshed</h3>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <p class="translate-y-full text-xs text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm">Website</p>
+                                            </div>
+                                            <div class="overflow-hidden" style="margin-top: 8%;">
+                                                <p data-href="#" class="clickable relative isolate flex justify-center items-center select-none overflow-hidden border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base hover:[&amp;:not(:disabled)]:text-neutrals-900 focus-visible:text-neutrals-900 text-neutrals-50 before:bg-neutrals-50 rounded-full" as="a" href="index.html#contact">View</p>
+                                            </div>
+
+                                        </article><img alt="Test" decoding="async" src="imgs/IMG_5471.jpeg" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="2160" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105" style="background-color:#3c6c34;object-position:100%" /></a>
+                                </li>
                                 
                                 
                                 
@@ -273,8 +291,8 @@
                 <div id="stars4"></div>
 
                         <script>
-                            function scrollToElement() {
-  const elementToScrollTo = document.getElementById('feeed');
+                            function scrollToElement(name) {
+  const elementToScrollTo = document.getElementById(name);
   scrollTo(elementToScrollTo);
 }
 
@@ -304,7 +322,7 @@ function scrollTo2(el) {
 
                 <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
                     <button disabled="" type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" onclick="scrollToElement()" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
-                    <button type="text" title="" onclick="scrollToElement()" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
+                    <button type="text" title="" onclick="scrollToElement('feeed')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
                 </div>
 
                         <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
