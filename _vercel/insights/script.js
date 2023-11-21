@@ -1,3 +1,6 @@
+// disable third party analytics
+
+/*
 "use strict";
 ! function() {
     let e = e => e,
@@ -100,3 +103,4 @@
         })
     })()
 }();
+*/
