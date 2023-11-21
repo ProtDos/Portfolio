@@ -116,16 +116,13 @@ if (window.innerWidth <= 1081) { // doing this for now.
 // Navbar with background after leaving section
 document.addEventListener("DOMContentLoaded", function () {
     var element1 = document.getElementById("really");
-    var element2 = document.getElementById("about");
+    var element2 = document.getElementById("about2");
 
     window.addEventListener('scroll', function () {
 
         if (element1 && element2) {
             var yPosition1 = element1.getBoundingClientRect().top;
-            console.log(yPosition1);
-            var yPosition2_ = element2.getBoundingClientRect().top;
-            // console.log(yPosition2_);
-            var yPosition2 = 950;
+            var yPosition2 = element2.getBoundingClientRect().top;
 
             console.log("Yeah");
 
