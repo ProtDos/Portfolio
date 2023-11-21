@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var yPosition1 = element1.getBoundingClientRect().top;
             var yPosition2_ = element2.getBoundingClientRect().top;
             console.log(yPosition2_);
-            var yPosition2 = 10;
+            var yPosition2 = 950;
 
             console.log("Yeah");
 
