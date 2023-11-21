@@ -124,8 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
             var yPosition1 = element1.getBoundingClientRect().top;
             var yPosition2 = element2.getBoundingClientRect().top;
 
-            console.log("Yeah");
-
             if (yPosition1 < yPosition2) {
                 document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent';
             } else if (yPosition1 > yPosition2) {
