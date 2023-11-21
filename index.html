@@ -273,14 +273,33 @@
                 <div id="stars4"></div>
 
                         <script>
-                            function scrollTo() {
-                                element = document.getElementById("da_thing_2");
-                                element.scroll(element.scrollWidth,0);
-                            }
+                            function scrollToElement() {
+  const elementToScrollTo = document.getElementById('feeed');
+  scrollTo(elementToScrollTo);
+}
+
+function scrollTo(el) {
+  const elRight = el.offsetLeft + el.offsetWidth;
+  const elLeft = el.offsetLeft;
+
+  const elParentRight = el.parentNode.offsetLeft + el.parentNode.offsetWidth;
+  const elParentLeft = el.parentNode.offsetLeft;
+
+  // check if right side of the element is not in view
+  if (elRight > elParentRight + el.parentNode.scrollLeft) {
+    el.parentNode.scrollLeft = elRight - elParentRight;
+  }
+
+  // check if left side of the element is not in view
+  else if (elLeft < elParentLeft + el.parentNode.scrollLeft) {
+    el.parentNode.scrollLeft = elLeft - elParentLeft;
+  }
+}
+
                         </script>
 
                 <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
-                    <button type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" onclick="scrollTo();" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
+                    <button type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" onclick="scrollToElement()" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
                     <div class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></div>
                 </div>
 
@@ -411,7 +430,7 @@
                                     </article>
                                 </li>
 
-                                <li data-item-index="8" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                <li data-item-index="8" id="feeed" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
                                     <article class="flex h-full flex-col justify-between">
                                         <div class="mb-5 flex flex-col items-center text-center">
                                             <h2>Would you like to give feedback?</h2>
