@@ -1,12 +1,4 @@
-body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    background: #F5F5F5;
-}
+
 
 .content {
     display: flex;
@@ -15,8 +7,8 @@ body {
     align-items: center;
     width: 15rem;
     height: 15rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    */text-align: center;
     color: #3e3e3e;
     border-radius: 43px;
     background: #F5F5F5;
