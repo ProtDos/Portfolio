@@ -12,13 +12,36 @@
             <span></span>
         </div>
     </div>
+
+      <div id="overlay">
+        <h1>test</h1>
+      </div>
 </body>
+
+  <style>
+    #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.5); /* Blue background with transparency */
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 20%;
+            z-index: 9999; /* Ensure it appears on top of everything */
+        }
+  </style>
 
   <script>
     const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
+  var overlay = document.getElementById('overlay');
+        overlay.style.display = 'block';
 });
     
   </script>
