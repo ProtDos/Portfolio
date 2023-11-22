@@ -37,12 +37,21 @@
   </style>
 
   <script>
+    let pressed = false;
     const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
-  var overlay = document.getElementById('overlay');
+  if (pressed == false) {
+    var overlay = document.getElementById('overlay');
         overlay.style.display = 'block';
+    pressed = true;
+  } else { 
+    var overlay = document.getElementById('overlay');
+        overlay.style.display = 'none';
+    pressed = false;
+  }
+  
 });
     
   </script>
