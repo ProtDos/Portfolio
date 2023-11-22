@@ -151,7 +151,7 @@ To use this portfolio template for your own website:
 - [x] Animation on form submit
 - [X] Control via buttons
 - [ ] Fix burger menu
-  - [ ] switch to cross
+  - [X] switch to cross
   - [ ] show links
 - [ ] Multi-language Support
     - [ ] German
