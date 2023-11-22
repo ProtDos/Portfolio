@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="_astro/css_clean.css">
 
     <script type="module" src="_astro/hoisted.fcf19d90.js"></script>
-    <!--
-    <script type="module" src="_astro/page.c2607b1b.js"></script>-->
 
     <script type="module" src="script.js"></script>
 
@@ -50,7 +48,6 @@
 
     <link rel="stylesheet" href="stars_test.css">
 
-    <!-- This is just experimental -->
     <link rel="stylesheet" href="rating_style.css">
     <link rel="stylesheet" href="burger_css.css">
 
@@ -60,8 +57,9 @@
 <body class="scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50">
     <iframe id="myHtml" src="fly.html"></iframe>
     <div id="overlay" class="hidden">
-        <a href="#"><h1>Test</h1></a>
-        <a href="#"><h1>Test2</h1></a>
+        <a href="#about" class="mobile-item" onclick="closeBurger()"><h1>ABOUT</h1></a>
+        <a href="#work" class="mobile-item" onclick="closeBurger()"><h1>WORK</h1></a>
+        <a href="#services" class="mobile-item" onclick="closeBurger()"><h1>SERVICES</h1></a>
       </div>
     <a href="#main" class="sr-only">Skip to main content</a>
 
@@ -75,16 +73,6 @@
                 <div id="nacbar" class="mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent">
                     <div class="grid grid-cols-3">
                         <div class="flex items-center lg:hidden">
-                            <!--
-                            <button type="button" id="mobile-navigation-toggle" aria-haspopup="menu" onclick="console.log('Test');" aria-expanded="true" aria-label="Toggle navigation menu" class="rounded-full px-3 py-1.5 transition-colors duration-500 md:px-4 md:py-2">
-                                <span class="sr-only">Menu</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="md:6-4 h-6 w-6 divide-y-0.5 divide-neutrals-800 md:h-7"><path fill-rule="evenodd" d="M3,17.25C3,16.839 3.339,16.5 3.75,16.5L20.25,16.5C20.661,16.5 21,16.839 21,17.25C21,17.661 20.661,18 20.25,18L3.75,18C3.339,18 3,17.661 3,17.25Z" clip-rule="evenodd" data-toggle-bar-top="true"></path><path fill-rule="evenodd" d="M3,12C3,11.589 3.339,11.25 3.75,11.25L20.25,11.25C20.661,11.25 21,11.589 21,12C21,12.411 20.661,12.75 20.25,12.75L3.75,12.75C3.339,12.75 3,12.411 3,12Z" clip-rule="evenodd" data-toggle-bar-middle="true"></path><path fill-rule="evenodd" d="M3,6.75C3,6.339 3.339,6 3.75,6L20.25,6C20.661,6 21,6.339 21,6.75C21,7.161 20.661,7.5 20.25,7.5L3.75,7.5C3.339,7.5 3,7.161 3,6.75Z" clip-rule="evenodd" data-toggle-bar-bottom="true"></path>
-                                </svg>
-                            </button>
-
-                            Testing out a new model of the mobile burger with a smooth 
-                            animation. See TODO in README.md for more information
-                            -->
                             <button type="button" id="mobile-navigation-toggle" aria-haspopup="menu" onclick="console.log('Test');" aria-expanded="true" aria-label="Toggle navigation menu" class="transition-colors duration-500 md:px-4 md:py-2">
                                 <div class="burger">
                                     <span></span>
@@ -105,30 +93,51 @@
 
      
 
-      <style>
-    #overlay {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #060918; /* #6819ff Blue background with transparency */
-        color: white;
-        font-size: 2em;
-        text-align: center;
-        padding-top: 20%;
-        opacity: 0.9;
-        transition: opacity 0.5s ease; /* Add a transition for the opacity property */
-        z-index: 9998; /* Ensure it appears on top of everything */
-    }
+    <style>
+        #overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #060918; 
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 20%;
+            opacity: 0.92;
+            transition: opacity 0.5s ease; 
+            z-index: 9998; 
+            align-items: center;
+            flex-direction: column;
+        }
 
-    #overlay.hidden {
-        opacity: 0; /* When the "hidden" class is added, fade out the overlay */
-        pointer-events: none; /* Make sure the hidden overlay is not clickable */
-    }
+        #overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
 
-  </style>
+        .mobile-item {
+            margin-bottom: 5%;
+            transition: background-color 0.3s ease;
+            width: 100%;
+
+        }
+
+        .mobile-item:hover {
+            background-color: #1a2141;
+            background: linear-gradient(to right, rgba(26, 33, 65, 0) 0%, #1a2141 50%, rgba(26, 33, 65, 0) 100%),
+                        linear-gradient(to left, rgba(26, 33, 65, 0) 0%, #1a2141 50%, rgba(26, 33, 65, 0) 100%);
+            opacity: 0.9;
+        }
+
+
+        .mobile-item:last-child {
+            margin-bottom: 0;
+        }
+
+    </style>
 
   <script>
     let pressed = false;
@@ -145,6 +154,12 @@
       }
       
     });
+
+    function closeBurger() {
+        burger.classList.toggle('active');
+        document.getElementById('overlay').classList.add('hidden');
+        pressed = false;
+    }
     
   </script>
 
@@ -289,25 +304,23 @@
                                         </article><img alt="Test" decoding="async" src="imgs/IMG_5471.jpeg" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="2160" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105" style="background-color:#3c6c34;object-position:100%" /></a>
                                 </li>
 
-                                <!-- this is just for testing, this will be changed -->
-                                <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" id="last_project" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
-                                    <a aria-label="Personal Website" aria-disabled="false" tabindex="0" class="group block h-full w-full rounded-md border border-neutrals-50/30" draggable="false">
-                                        <article class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
-                                            <div class="overflow-hidden"><time dateTime="2023-08-01" class="block translate-y-full text-xs uppercase text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">November 2022</time></div>
+                                <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" id="last_project" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">                                      
+                                    <article class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-1 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
                                             <div class="overflow-hidden">
-                                                <h3 id="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" class="translate-y-full text-2xl font-bold transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-4xl">Refreshed</h3>
+                                                <h3 id="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" class="text-2xl font-bold transition-transform duration-300 lg:text-4xl">Got an own idea?</h3>
                                             </div>
                                             <div class="overflow-hidden">
-                                                <p class="translate-y-full text-xs text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm">Website</p>
+                                                <p class="text-xs text-neutrals-50/90 transition-transform duration-300 lg:text-sm">Contact be down below so we can create your dream project right now!</p>
                                             </div>
                                             <div class="overflow-hidden" style="margin-top: 8%;">
-                                                <p data-href="#" class="clickable relative isolate flex justify-center items-center select-none overflow-hidden border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base hover:[&amp;:not(:disabled)]:text-neutrals-900 focus-visible:text-neutrals-900 text-neutrals-50 before:bg-neutrals-50 rounded-full" as="a" href="index.html#contact">View</p>
+                                                <a class="relative isolate flex justify-center items-center select-none overflow-hidden border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base hover:[&amp;:not(:disabled)]:text-neutrals-900 focus-visible:text-neutrals-900 text-neutrals-50 before:bg-neutrals-50 rounded-full" href="index.html#contact">Contact</a>
                                             </div>
 
-                                        </article><img alt="Test" decoding="async" src="imgs/IMG_5471.jpeg" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="2160" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105" style="background-color:#3c6c34;object-position:100%" /></a>
+                                        </article>
+                                        <img alt="Test" decoding="async" src="_astro/future-grid.a0cd4189.webp" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="2160" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105" style="background-color:transparent; object-position:100%" />
+                                
                                 </li>
-                                
-                                
+                                                            
                                 
                             </ul>
                         </div>
