@@ -150,15 +150,16 @@ To use this portfolio template for your own website:
 - [x] Add personal projects
 - [x] Animation on form submit
 - [X] Control via buttons
-- [ ] Fix burger menu
+- [X] Fix burger menu
   - [X] switch to cross
-  - [ ] show links
+  - [X] show links
 - [ ] Multi-language Support
     - [ ] German
-    - [ ] English
+    - [X] English
     - [ ] Other
 - [ ] White Mode?
 - [X] show Background from navbar earlier
+- [ ] arrow back in carousel
 - [ ] add "Thank You" page
 - [ ] function to submit rating / feedback
 
