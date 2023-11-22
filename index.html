@@ -95,6 +95,56 @@
         </header>
     </astro-island> 
 
+     <div id="overlay" class="hidden">
+        <a href="#"><h1>Test</h1></a>
+        <a href="#"><h1>Test2</h1></a>
+      </div>
+
+      <style>
+    #overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.7); /* Blue background with transparency */
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20%;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add a transition for the opacity property */
+    /*z-index: 9999; /* Ensure it appears on top of everything */
+}
+
+#overlay.hidden {
+    opacity: 0; /* When the "hidden" class is added, fade out the overlay */
+    pointer-events: none; /* Make sure the hidden overlay is not clickable */
+}
+
+  </style>
+
+  <script>
+    let pressed = false;
+    const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  if (pressed == false) {
+    document.getElementById('overlay').classList.remove('hidden');
+    pressed = true;
+  } else { 
+    document.getElementById('overlay').classList.add('hidden');
+    pressed = false;
+  }
+  
+});
+    
+  </script>
+
+    
+
     <main id="main">
         <section aria-labelledby="hero-heading" id="da_section" class="relative inset-0 flex h-screen w-full flex-col justify-center py-28" id="sec1">
             <astro-island uid="J7izH" prefix="r4" component-url="/_astro/grid-background.4586b404.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;GridBackground&quot;,&quot;value&quot;:true}" await-children="">
