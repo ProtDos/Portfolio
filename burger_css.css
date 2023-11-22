@@ -1,4 +1,7 @@
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .___content___ {
     display: flex;
@@ -17,7 +20,7 @@
 
 }
 
-.first {
+.___first___ {
     margin-right: 2rem;
 }
 
