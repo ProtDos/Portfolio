@@ -40,6 +40,9 @@ html, body {
     height: 20px;
     cursor: pointer;
     z-index: 20;
+    position: relative;
+    top: 50%;
+    
 }
 
 .burger span {
