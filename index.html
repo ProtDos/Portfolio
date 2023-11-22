@@ -103,26 +103,26 @@
 
       <style>
     #overlay {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 255, 0.7); /* Blue background with transparency */
-    color: white;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 20%;
-    opacity: 1;
-    transition: opacity 0.5s ease; /* Add a transition for the opacity property */
-    /*z-index: 9999; /* Ensure it appears on top of everything */
-}
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 255, 0.9); /* Blue background with transparency */
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        padding-top: 20%;
+        opacity: 1;
+        transition: opacity 0.5s ease; /* Add a transition for the opacity property */
+        z-index: 9999; /* Ensure it appears on top of everything */
+    }
 
-#overlay.hidden {
-    opacity: 0; /* When the "hidden" class is added, fade out the overlay */
-    pointer-events: none; /* Make sure the hidden overlay is not clickable */
-}
+    #overlay.hidden {
+        opacity: 0; /* When the "hidden" class is added, fade out the overlay */
+        pointer-events: none; /* Make sure the hidden overlay is not clickable */
+    }
 
   </style>
 
@@ -130,17 +130,17 @@
     let pressed = false;
     const burger = document.querySelector('.burger');
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  if (pressed == false) {
-    document.getElementById('overlay').classList.remove('hidden');
-    pressed = true;
-  } else { 
-    document.getElementById('overlay').classList.add('hidden');
-    pressed = false;
-  }
-  
-});
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      if (pressed == false) {
+        document.getElementById('overlay').classList.remove('hidden');
+        pressed = true;
+      } else { 
+        document.getElementById('overlay').classList.add('hidden');
+        pressed = false;
+      }
+      
+    });
     
   </script>
 
