@@ -160,7 +160,7 @@ To use this portfolio template for your own website:
 - [ ] White Mode?
 - [X] show Background from navbar earlier
 - [ ] arrow back in carousel
-- [ ] add "Thank You" page
+- [X] add "Thank You" page
 - [ ] function to submit rating / feedback
 
 See the [open issues](https://github.com/ProtDos/Portfolio/issues) for a full list of proposed features (and known issues).
