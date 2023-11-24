@@ -304,10 +304,11 @@
                                         </article><img alt="Test" decoding="async" src="imgs/IMG_5471.jpeg" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="2160" class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105" style="background-color:#3c6c34;object-position:100%" /></a>
                                 </li>
 
-                                <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" id="last_project" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">                                      
+                                <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
+                                    
                                     <article class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-1 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
                                             <div class="overflow-hidden">
-                                                <h3 id="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" class="text-2xl font-bold transition-transform duration-300 lg:text-4xl">Got an own idea?</h3>
+                                                <h3 id="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" class="text-2xl font-bold transition-transform duration-300 lg:text-4xl">Got an idea?</h3>
                                             </div>
                                             <div class="overflow-hidden">
                                                 <p class="text-xs text-neutrals-50/90 transition-transform duration-300 lg:text-sm">Contact be down below so we can create your dream project right now!</p>
@@ -368,51 +369,48 @@
             <div class="mt-4 w-full scroll-container">
                 <div class="content">
                     <div class="relative py-8">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-                <div id="stars4"></div>
+
+                        <div id="stars"></div>
+                        <div id="stars2"></div>
+                        <div id="stars3"></div>
+                        <div id="stars4"></div>
 
                         <script>
-                            function scrollToElement_old(name) {
-  const elementToScrollTo = document.getElementById(name);
-  scrollTo(elementToScrollTo);
-}
-
                             function scrollToElement(name) {
-                                  const elementToScrollTo = document.getElementById(name);
-    elementToScrollTo.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-  }
+                                const elementToScrollTo = document.getElementById(name);
+                                elementToScrollTo.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                            }
 
-function scrollTo2(el) {
-  const elRight = el.offsetLeft + el.offsetWidth;
-  const elLeft = el.offsetLeft;
+                            function scrollTo2(el) {
+                                const elRight = el.offsetLeft + el.offsetWidth;
+                                const elLeft = el.offsetLeft;
 
-  const elParentRight = el.parentNode.offsetLeft + el.parentNode.offsetWidth;
-  const elParentLeft = el.parentNode.offsetLeft;
+                                const elParentRight = el.parentNode.offsetLeft + el.parentNode.offsetWidth;
+                                const elParentLeft = el.parentNode.offsetLeft;
 
-  // check if right side of the element is not in view
-  if (elRight > elParentRight + el.parentNode.scrollLeft) {
-    el.parentNode.scrollLeft = elRight - elParentRight;
-  }
+                                if (elRight > elParentRight + el.parentNode.scrollLeft) {
+                                    el.parentNode.scrollLeft = elRight - elParentRight;
+                                }
 
-  // check if left side of the element is not in view
-  else if (elLeft < elParentLeft + el.parentNode.scrollLeft) {
-    el.parentNode.scrollLeft = elLeft - elParentLeft;
-  }
-}
+                                else if (elLeft < elParentLeft + el.parentNode.scrollLeft) {
+                                    el.parentNode.scrollLeft = elLeft - elParentLeft;
+                                }
+                            }
+
+
+                            
 
                         </script>
 
-                <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
-                    <button disabled="" type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" onclick="scrollToElement()" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
-                    <button type="text" title="" onclick="scrollToElement('feeed')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
-                </div>
+                        <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
+                            <button disabled="" id="btn-back-testimonials" type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" onclick="scrollToElement('test_first')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
+                            <button type="text" title="" onclick="scrollToElement('feeed')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
+                        </div>
 
                         <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
                             <ul id="da_thing_2" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-hidden ps-10" style="padding-left: 20px;">
                              
-                                <li data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
+                                <li id="test_first" data-item-index="1" aria-current="false" aria-hidden="true" class="relative me-3 h-full w-[32rem] max-w-[80vw] flex-[0_0_auto] rounded-lg border border-neutrals-200/20 bg-radial-highlight p-4 md:p-8">
                                     <article class="flex h-full flex-col justify-between gap-y-2">
                                         <blockquote class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">&quot;
                                             <!-- -->CodingLive is an outstanding developer with amazing skills, totally recommend hiring.
@@ -677,6 +675,22 @@ function scrollTo2(el) {
         </section>
 
         <script>
+            const scrollContainer = document.getElementById('da_thing_2');
+            const back_btn = document.getElementById('btn-back-testimonials');
+
+            
+            scrollContainer.addEventListener('scroll', () => {
+                if (scrollContainer.scrollLeft > 25) {
+                    console.log('Ul was scrolled!');
+                    back_btn.disabled = false;
+                    back_btn.style.visibility = 'visible';
+                } else {
+                    console.log('Ul is back to the original position.');
+                    back_btn.disabled = true;
+                    back_btn.style.visibility = 'hidden';
+                }
+            });
+
             var star_1_selected = false;
             var star_2_selected = false;
             var star_3_selected = false;
@@ -684,14 +698,12 @@ function scrollTo2(el) {
             var star_5_selected = false;
 
             function set_star(index) {
-                // Reset all stars to unselected
                 star_1_selected = false;
                 star_2_selected = false;
                 star_3_selected = false;
                 star_4_selected = false;
                 star_5_selected = false;
 
-                // Set the selected stars based on the given index
                 switch (index) {
                     case 1:
                         star_1_selected = true;
@@ -736,7 +748,6 @@ function scrollTo2(el) {
                 } else if (star_1_selected) {
                     return 1;
                 } else {
-                    // Return a default value or handle accordingly if no stars are selected
                     return 0;
                 }
             }
