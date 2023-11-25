@@ -73,7 +73,7 @@
                 <div id="nacbar" class="mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent">
                     <div class="grid grid-cols-3">
                         <div class="flex items-center lg:hidden">
-                            <button type="button" id="mobile-navigation-toggle" aria-haspopup="menu" onclick="console.log('Test');" aria-expanded="true" aria-label="Toggle navigation menu" class="transition-colors duration-500 md:px-4 md:py-2">
+                            <button type="button" id="mobile-navigation-toggle" aria-haspopup="menu" aria-expanded="true" aria-label="Toggle navigation menu" class="transition-colors duration-500 md:px-4 md:py-2">
                                 <div class="burger">
                                     <span></span>
                                 </div>
@@ -213,13 +213,13 @@
                     <div class="relative py-8">
 
                         <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
-                            <button type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" disabled="" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
-                            <button type="text" onclick="scrollToElement('last_project')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
+                            <button type="text" onclick="scrollToElement('test_first2')" id="btn-back-testimonials2" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" disabled="" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
+                            <button type="text" onclick="scrollToElement('last_project')" id="btn-back-testimonials3" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
                         </div>
 
                         <div class="h-[calc(clamp(18rem,42vmin,26rem)*3/2)] touch-none select-none overflow-hidden" id="da_thing">
                             <ul id="project-carousel" aria-label="Project Carousel" class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto ps-10" style="padding-left: 20px;">
-                               <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
+                               <li id="test_first2" aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
                                     <a aria-label="Personal Website" aria-disabled="false" tabindex="0" class="group block h-full w-full rounded-md border border-neutrals-50/30" draggable="false">
                                         <article class="absolute inset-0 flex flex-col items-center justify-center gap-y-1 bg-neutrals-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
                                             <div class="overflow-hidden"><time dateTime="2023-08-01" class="block translate-y-full text-xs uppercase text-neutrals-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0">August 2023</time></div>
@@ -306,7 +306,7 @@
 
                                 <li aria-labelledby="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" data-item-index="0" aria-current="true" aria-hidden="false" class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md">
                                     
-                                    <article class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-1 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
+                                    <article id="last_project" class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-neutrals-900/50 p-4 text-center opacity-1 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
                                             <div class="overflow-hidden">
                                                 <h3 id="project-item-6ab247b3-08e7-423d-bfe6-4fceddb81c90-heading" class="text-2xl font-bold transition-transform duration-300 lg:text-4xl">Got an idea?</h3>
                                             </div>
@@ -337,6 +337,34 @@
 
             </astro-island>
         </section>
+
+        <script>
+            const scrollContainer2 = document.getElementById('project-carousel');
+            const back_btn2 = document.getElementById('btn-back-testimonials2');
+            const back_btn3 = document.getElementById('btn-back-testimonials3');
+
+            
+            scrollContainer2.addEventListener('scroll', () => {
+                const isAtEnd = scrollContainer2.scrollLeft + scrollContainer2.clientWidth >= scrollContainer2.scrollWidth;
+                
+                if (isAtEnd) {
+                    back_btn3.disabled = true;
+                    back_btn3.style.visibility = 'hidden';
+                } else {
+                    back_btn3.disabled = false;
+                    back_btn3.style.visibility = 'visible';
+                }
+
+                if (scrollContainer2.scrollLeft > 25) {
+                    back_btn2.disabled = false;
+                    back_btn2.style.visibility = 'visible';
+                } else {
+                    back_btn2.disabled = true;
+                    back_btn2.style.visibility = 'hidden';
+                }
+            });
+            </script>
+
         <section class="bg-animation z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen before:inset-x-0 before:h-px before:absolute before:w-4/5 before:top-0 before:-z-10 before:bg-gradient-to-r before:from-transparent before:via-neutrals-600 before:to-transparent before:max-w-7xl before:mx-auto after:pointer-events-none after:absolute after:inset-0 after:-z-10 after:mx-auto after:h-full after:w-full after:max-w-7xl after:bg-[radial-gradient(40%_36%_at_50%_0%,rgba(105,25,255,0.04)_0%,rgba(105,25,255,0)_100%,rgba(105,25,255,0)_100%),radial-gradient(32%_20%_at_50%_32%,rgba(105,25,255,0.08)_0%,rgba(105,25,255,0)_100%)]" id="stories" aria-labelledby="stories-heading">
             
             <astro-island uid="Z9hi00" prefix="r27" component-url="/_astro/stars-background.ac318252.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;StarsBackground&quot;,&quot;value&quot;:true}" await-children="">
@@ -404,7 +432,7 @@
 
                         <div class="pointer-events-none absolute top-1/2 z-10 flex w-full -translate-y-1/2 justify-between px-4 lg:px-8">
                             <button disabled="" id="btn-back-testimonials" type="text" title="Previous project slide" style="visibility: hidden;" aria-controls="project-carousel" onclick="scrollToElement('test_first')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd"></path></svg></button>
-                            <button type="text" title="" onclick="scrollToElement('feeed')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
+                            <button type="text" id="forward_btn" title="" onclick="scrollToElement('feeed')" class="pointer-events-auto aspect-square h-fit rounded-full border border-neutrals-600 bg-neutrals-900/90 p-4 text-neutrals-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-neutrals-900/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"></path></svg></button>
                         </div>
 
                         <div class="mask-inline touch-none select-none overflow-hidden" id="da_thing">
@@ -677,15 +705,25 @@
         <script>
             const scrollContainer = document.getElementById('da_thing_2');
             const back_btn = document.getElementById('btn-back-testimonials');
+            const back_bt2 = document.getElementById('forward_btn');
 
             
             scrollContainer.addEventListener('scroll', () => {
+                const isAtEnd = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth;
+
+                if (isAtEnd){
+                    back_bt2.disabled = true;
+                    back_bt2.style.visibility = 'hidden';
+                } else {
+                    back_bt2.disabled = false;
+                    back_bt2.style.visibility = 'visible';
+                }
+
+
                 if (scrollContainer.scrollLeft > 25) {
-                    console.log('Ul was scrolled!');
                     back_btn.disabled = false;
                     back_btn.style.visibility = 'visible';
                 } else {
-                    console.log('Ul is back to the original position.');
                     back_btn.disabled = true;
                     back_btn.style.visibility = 'hidden';
                 }
@@ -756,14 +794,7 @@
                 document.getElementById('rating_submit').addEventListener('submit', function (event) {
                     event.preventDefault();
 
-                    console.log("here");
-
                     var input1Value = document.getElementById('text_feedback').value;
-
-
-                    console.log(input1Value);
-
-                    console.log(getHighestSelectedStar());
 
         
                     // document.getElementById('myForm').submit();

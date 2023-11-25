@@ -87,7 +87,6 @@ var clickableElements = document.getElementsByClassName('clickable');
 Array.from(clickableElements).forEach(function(element) {
     element.addEventListener('click', function() {
     var href = element.getAttribute('data-href');
-    console.log(href);
 
     window.open(href, '_blank');
     });
@@ -102,7 +101,6 @@ window.mobileAndTabletCheck = function() {
   return check;
 };
 
-console.log(window.mobileAndTabletCheck());
 
 // JavaScript to change the class name on mobile devices
 if (window.innerWidth <= 1081) { // doing this for now.
