@@ -1,3 +1,4 @@
+try {
 // This is for the trippy grid animation
 var myDiv = document.getElementById('shit');
 function convertCursorPosition(x, y) {
@@ -21,12 +22,10 @@ function handleMouseMove(event) {
     myDiv.style.backgroundPosition = `calc(50% + ${convertedPosition.x * -1}px) calc(50% + ${convertedPosition.y * -1}px)`
 }
 
-try {
+
     var cont = document.getElementById("da_section");
     cont.addEventListener('mousemove', handleMouseMove);
-} catch(error) {
-    
-}
+
 
 
 // This is for the work carousel
@@ -181,3 +180,7 @@ function typeJs() {
 }
 
 setInterval(typeJs, 250);
+
+    } catch(error) {
+    
+}
