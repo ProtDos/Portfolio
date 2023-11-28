@@ -68,7 +68,7 @@ Skip to main content
     astro-island,astro-slot,astro-static-slot{display:contents}
 </style>
 
-<astro-island uid="IAx7C" prefix="r2" component-url="/_astro/header.6a01347f.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{&quot;data-astro-transition-persist&quot;:[0,&quot;astro-p2oxaboh-1&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" data-astro-transition-persist="astro-p2oxaboh-1" await-children="">
+<astro-island id="the_bar" uid="IAx7C" prefix="r2" component-url="/_astro/header.6a01347f.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{&quot;data-astro-transition-persist&quot;:[0,&quot;astro-p2oxaboh-1&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" data-astro-transition-persist="astro-p2oxaboh-1" await-children="">
     <header aria-label="Primary" class="fixed top-0 z-40 w-full" style="z-index: 9999;">
         <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
             <div id="nacbar" class="mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent">
@@ -91,6 +91,29 @@ Skip to main content
         </div>
     </header>
 </astro-island>
+
+    <script>
+            var targetElement = document.getElementById('the_bar');
+
+  // Add a scroll event listener to the window
+  window.addEventListener('scroll', function() {
+    // Get the current scroll position
+    var scrollPosition = window.scrollY;
+
+    // Get the top position of the target element relative to the viewport
+    var elementTop = targetElement.offsetTop;
+
+      console.log(scrollPosition);
+      console.log(elementTop);
+
+    // Check if the element is lower than the top of the viewport
+    if (scrollPosition > elementTop) {
+      console.log('Element is lower than the top of the viewport');
+    } else {
+      console.log('Element is not lower than the top of the viewport');
+    }
+  });
+            </script>
 
 
     <main id="main" id="sec1">
