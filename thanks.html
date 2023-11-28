@@ -52,16 +52,10 @@
 Skip to main content
 </a>
 <div id="overlay" class="hidden">
-    <a href="#about" class="mobile-item" onclick="closeBurger()">
-        <h1>ABOUT</h1>
-    </a>
-    <a href="#work" class="mobile-item" onclick="closeBurger()">
-        <h1>WORK</h1>
-    </a>
-    <a href="#services" class="mobile-item" onclick="closeBurger()">
-        <h1>SERVICES</h1>
-    </a>
-</div>
+        <a href="#about" class="mobile-item" onclick="closeBurger()"><h1>ABOUT</h1></a>
+        <a href="#work" class="mobile-item" onclick="closeBurger()"><h1>WORK</h1></a>
+        <a href="#services" class="mobile-item" onclick="closeBurger()"><h1>SERVICES</h1></a>
+      </div>
 <a href="#main" class="sr-only">Skip to main content</a>
 
 <style>
@@ -70,27 +64,98 @@ Skip to main content
 
 <astro-island id="the_bar" uid="IAx7C" prefix="r2" component-url="/_astro/header.6a01347f.js" component-export="default" renderer-url="/_astro/client.c2e853c0.js" props="{&quot;data-astro-transition-persist&quot;:[0,&quot;astro-p2oxaboh-1&quot;]}" ssr="" client="idle" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" data-astro-transition-persist="astro-p2oxaboh-1" await-children="">
     <header aria-label="Primary" class="fixed top-0 z-40 w-full" style="z-index: 9999;">
-        <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
-            <div id="nacbar" class="mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent">
-                <div class="grid grid-cols-3">
-                    <div class="flex items-center lg:hidden">
-                        <button type="button" id="mobile-navigation-toggle" aria-haspopup="menu" aria-expanded="true" aria-label="Toggle navigation menu" class="transition-colors duration-500 md:px-4 md:py-2">
-                            <div class="burger">
-                                <span></span>
-                            </div>
-                        </button>
+            <div class="mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
+                <div id="nacbar" class="mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent">
+                    <div class="grid grid-cols-3">
+                        <div class="flex items-center lg:hidden">
+                            <button type="button" id="mobile-navigation-toggle" aria-haspopup="menu" aria-expanded="true" aria-label="Toggle navigation menu" class="transition-colors duration-500 md:px-4 md:py-2">
+                                <div class="burger">
+                                    <span></span>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <nav aria-label="Primary" class="ms-4 hidden items-center gap-x-6 lg:flex"><a href="index.html#about" class="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100">About</a><a href="index.html#work" class="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100">Work</a><a href="index.html#services" class="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100">Services</a></nav>
+                        <div class="flex items-center justify-center" id="really">
+                            <a href="index.html" title="Navigate home" class="hover:animate-jiggle"><img src="_astro/wordmark.svg" width="483" height="52" alt="CodingLive" decoding="async" class="h-3.5 md:h-4" /></a>
+                        </div>
+                        <div class="flex items-center justify-end"><a class="relative isolate flex justify-center items-center select-none overflow-hidden border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base hover:[&amp;:not(:disabled)]:text-neutrals-900 focus-visible:text-neutrals-900 text-neutrals-50 before:bg-neutrals-50 rounded-full" as="a" href="index.html#contact">Hit me up</a></div>
                     </div>
-
-                    <nav aria-label="Primary" class="ms-4 hidden items-center gap-x-6 lg:flex"><a href="index.html#about" class="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100">About</a><a href="index.html#work" class="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100">Work</a><a href="index.html#services" class="relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100">Services</a></nav>
-                    <div class="flex items-center justify-center" id="really">
-                        <a href="index.html" title="Navigate home" class="hover:animate-jiggle"><img src="_astro/wordmark.svg" width="483" height="52" alt="CodingLive" decoding="async" class="h-3.5 md:h-4" /></a>
-                    </div>
-                    <div class="flex items-center justify-end"><a class="relative isolate flex justify-center items-center select-none overflow-hidden border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:[&amp;:not(:disabled)]:before:scale-x-100 focus-visible:[&amp;:not(:disabled)]:before:scale-x-100 active:[&amp;:not(:disabled)]:scale-[1.01] disabled:opacity-70 border-neutrals-50 px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base hover:[&amp;:not(:disabled)]:text-neutrals-900 focus-visible:text-neutrals-900 text-neutrals-50 before:bg-neutrals-50 rounded-full" as="a" href="index.html#contact">Hit me up</a></div>
                 </div>
             </div>
-        </div>
-    </header>
-</astro-island>
+        </header>
+    </astro-island>
+
+    <style>
+        #overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #060918; 
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 20%;
+            opacity: 0.92;
+            transition: opacity 0.5s ease; 
+            z-index: 9998; 
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .mobile-item {
+            margin-bottom: 5%;
+            transition: background-color 0.3s ease;
+            width: 100%;
+
+        }
+
+        .mobile-item:hover {
+            background-color: #1a2141;
+            background: linear-gradient(to right, rgba(26, 33, 65, 0) 0%, #1a2141 50%, rgba(26, 33, 65, 0) 100%),
+                        linear-gradient(to left, rgba(26, 33, 65, 0) 0%, #1a2141 50%, rgba(26, 33, 65, 0) 100%);
+            opacity: 0.9;
+        }
+
+
+        .mobile-item:last-child {
+            margin-bottom: 0;
+        }
+
+    </style>
+
+  <script>
+    let pressed = false;
+    const burger = document.querySelector('.burger');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      if (pressed == false) {
+        document.getElementById('overlay').classList.remove('hidden');
+        pressed = true;
+      } else { 
+        document.getElementById('overlay').classList.add('hidden');
+        pressed = false;
+      }
+      
+    });
+
+    function closeBurger() {
+        burger.classList.toggle('active');
+        document.getElementById('overlay').classList.add('hidden');
+        pressed = false;
+    }
+    
+  </script>
+
 
     <script>
             var targetElement = document.getElementById('the_bar');
