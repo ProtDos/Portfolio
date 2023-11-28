@@ -27,7 +27,7 @@ function checkForCompleteWord() {
   typedCharacters += event.key.toLowerCase();
 
     console.log(typedCharacters);
-  if (typedCharacters === 'keyboard') {
+  if ('keyboard' in typedCharacters) {
     console.log('User typed "keyboard"!');
     // Reset typed characters for the next detection
     typedCharacters = '';
