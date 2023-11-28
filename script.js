@@ -20,8 +20,13 @@ function handleMouseMove(event) {
     
     myDiv.style.backgroundPosition = `calc(50% + ${convertedPosition.x * -1}px) calc(50% + ${convertedPosition.y * -1}px)`
 }
-var cont = document.getElementById("da_section");
-cont.addEventListener('mousemove', handleMouseMove);
+
+try {
+    var cont = document.getElementById("da_section");
+    cont.addEventListener('mousemove', handleMouseMove);
+} catch(error) {
+    
+}
 
 
 // This is for the work carousel
