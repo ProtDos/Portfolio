@@ -109,8 +109,14 @@ Skip to main content
     // Check if the element is lower than the top of the viewport
     if (scrollPosition > elementTop) {
       console.log('Element is lower than the top of the viewport');
+        ocument.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50';
+            
+
     } else {
       console.log('Element is not lower than the top of the viewport');
+
+                                document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent';
+
     }
   });
             </script>
