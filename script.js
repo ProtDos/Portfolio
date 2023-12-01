@@ -128,10 +128,19 @@ try {  // this is just temporary, this can't be in production by any means.
                 var yPosition2 = element2.getBoundingClientRect().top;
     
                 if (yPosition1 < yPosition2) {
-                    document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent';
+                    if (document.getElementById('nacbar').classList.contains("animated_bar")) {
+                        document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent animated_bar';
+                    } else {
+                        document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-transparent bg-transparent';
+                    }
                 } else if (yPosition1 > yPosition2) {
-                    document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50';
-                } else {
+
+                    if (document.getElementById('nacbar').classList.contains("animated_bar")) {
+                        document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 animated_bar';
+                    } else {
+                        document.getElementById('nacbar').className = 'mt-4 rounded-full border-0.5 p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50';
+                    }
+                    } else {
                 }
             } else {
             }
