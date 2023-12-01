@@ -166,6 +166,7 @@ To use this portfolio template for your own website:
 - [ ] Organize Code
   - [ ] CSS
   - [ ] JS
+- [ ] New font
     
 
 See the [open issues](https://github.com/ProtDos/Portfolio/issues) for a full list of proposed features (and known issues).
