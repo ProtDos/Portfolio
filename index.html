@@ -89,7 +89,148 @@
                 </div>
             </div>
         </header>
-    </astro-island> 
+    </astro-island>
+
+    <script>
+        let typedCharacters = '';
+        let word_to_search = "rainbow";
+
+        document.addEventListener('keyup', function (event) {
+            const userInput = event.key.toLowerCase();
+            
+            console.log("User Input:");
+            console.log(userInput);
+
+            if (userInput === 'backspace') {
+                typedCharacters = typedCharacters.slice(0, -1);
+            } else {
+                typedCharacters += event.key.toLowerCase();
+            }
+
+            console.log(typedCharacters);
+
+            if (typedCharacters.includes(word_to_search)) {
+                console.log("Found!");
+                typedCharacters = '';
+
+                document.getElementById("nacbar").classList.add("animated_bar");
+
+                setTimeout(function () {
+                    document.getElementById("nacbar").classList.remove("animated_bar");
+                }, 10000);
+            }
+
+        });
+
+    </script>
+
+    <style>
+        /*
+        .wrapper.animated { 
+            height: 100%;
+            width: 100%;
+            left:0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+
+            -webkit-animation: rainbow 18s ease infinite, fadeInOut 2s ease infinite;
+            -z-animation: rainbow 18s ease infinite, fadeInOut 2s ease infinite;
+            -o-animation: rainbow 18s ease infinite, fadeInOut 2s ease infinite;
+            animation: rainbow 18s ease infinite, fadeInOut 2s ease infinite;
+        }*/
+
+        .animated_bar {
+            position: absolute;
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+
+            -webkit-animation: rainbow 10s ease;
+            -moz-animation: rainbow 10s ease;
+            -o-animation: rainbow 10s ease;
+            animation: rainbow 10s ease;
+        }
+
+        @-webkit-keyframes rainbow {
+            0%{
+                opacity: 0;
+                background-position:0% 82%
+            }
+            5%{
+                opacity: 1;
+            }
+            50%{
+                background-position:100% 19%
+            }
+            95%{
+                opacity: 0.2;
+            }
+            100%{  
+                opacity: 0;            
+                background-position:0% 82%
+            }
+        }
+        @-moz-keyframes rainbow {
+            0%{
+                opacity: 0;
+                background-position:0% 82%
+            }
+            5%{
+                opacity: 1;
+            }
+            50%{
+                background-position:100% 19%
+            }
+            95%{
+                opacity: 0.2;
+            }
+            100%{  
+                opacity: 0;            
+                background-position:0% 82%
+            }
+        }
+        @-o-keyframes rainbow {
+            0%{
+                opacity: 0;
+                background-position:0% 82%
+            }
+            5%{
+                opacity: 1;
+            }
+            50%{
+                background-position:100% 19%
+            }
+            95%{
+                opacity: 0.2;
+            }
+            100%{  
+                opacity: 0;            
+                background-position:0% 82%
+            }
+        }
+        @keyframes rainbow { 
+            0%{
+                opacity: 0;
+                background-position:0% 82%
+            }
+            5%{
+                opacity: 1;
+            }
+            50%{
+                background-position:100% 19%
+            }
+            95%{
+                opacity: 0.2;
+            }
+            100%{  
+                opacity: 0;            
+                background-position:0% 82%
+            }
+        }
+    </style>
 
      
 
