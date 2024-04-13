@@ -654,12 +654,13 @@
                                         <div class="mb-5 flex flex-col items-center text-center">
                                             <h2>Would you like to give feedback?</h2>
                                             <p class="max-w-prose text-sm/relaxed text-neutrals-200 lg:text-base/relaxed">Send me a message and I'd appreciate your rating:</p>
-                                            <div style="padding-top: 8%;">
+                                            <div style="padding-top: 8%; border-radius: 10px !important;">
                                                 <textarea id="text_feedback" class="peer block max-h-36 min-h-[3.125rem] w-full appearance-none rounded-sm border border-neutrals-600 bg-neutrals-800 p-3 caret-primary shadow-[0_0_10px,_inset_0_0_10px] shadow-transparent transition-colors focus:border-primary focus:shadow-primary/70 focus:outline-none disabled:cursor-not-allowed disabled:opacity-70" id="contact-form-message" name="message" placeholder="Your feedback"></textarea>
                                             </div>
                                             
                                         </div>
                                         <form class="rating" id="rating_submit" action="https://api.codinglive.dev:1234/feedback" method="POST">
+                                            <input type="hidden" id="feedback_message" name="feedback_message">
 
                                             <div class="rating__stars">
                                                 <input id="rating-1" class="rating__input rating__input-1" type="radio" name="rating" value="1">
@@ -789,6 +790,13 @@
             </div>
             
         </section>
+
+        <script>
+            document.getElementById('rating_submit').addEventListener('submit', function(event) {
+                var feedback = document.getElementById('text_feedback').value;
+                document.getElementById('feedback_message').value = feedback;
+            });
+        </script>
 
         <script>
             const scrollContainer = document.getElementById('da_thing_2');
