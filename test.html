@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Test Script</title>
+</head>
+
+<body style="background: #3c2831">
+
+
+</body>
+
+    <script>
+document.addEventListener('keyup', function (event) {
+  const userInput = event.key.toLowerCase(); // Convert input to lowercase for case-insensitivity
+
+    console.log(userInput);
+
+  if (userInput === 'k' || userInput === 'e' || userInput === 'y' || userInput === 'b' || userInput === 'o' || userInput === 'a' || userInput === 'r' || userInput === 'd') {
+    // Check if the user is spelling "keyboard" one key at a time
+    checkForCompleteWord();
+  }
+});
+
+let typedCharacters = '';
+
+function checkForCompleteWord() {
+  typedCharacters += event.key.toLowerCase();
+
+    console.log(typedCharacters);
+  if ('keyboard' in typedCharacters) {
+    console.log('User typed "keyboard"!');
+    // Reset typed characters for the next detection
+    typedCharacters = '';
+  }
+}
+
+
+    </script>
+
+</html>
